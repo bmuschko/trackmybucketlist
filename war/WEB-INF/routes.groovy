@@ -1,0 +1,6 @@
+get  "/goals",                forward:  "/showGoals.groovy"
+get  "/goals/add",            forward:  "/WEB-INF/pages/goal.gtpl"
+post "/goals/insert",         forward:  "/insertGoal.groovy"
+get  "/goals/delete/@id",     forward:  "/deleteGoal.groovy?id=@id"
+get  "/goals/edit/@id",       forward:  "/editGoal.groovy?id=@id"
+post "/goals/update",         forward:  "/updateGoal.groovy"
