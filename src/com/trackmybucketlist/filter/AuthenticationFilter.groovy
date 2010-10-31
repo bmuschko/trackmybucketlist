@@ -31,8 +31,9 @@ class AuthenticationFilter implements Filter {
         if(user) {
             userInfo = new AuthenticatedUserInfo()
             userInfo.setUrl userService.createLogoutURL(LOGOUT_URL)
+            userInfo.setUserId user.getUserId()
             userInfo.setNickname user.getNickname()
-            userInfo.setEmail user.getEmail()      
+            userInfo.setEmail user.getEmail()
         }
         else {
             userInfo = new AnonymousUserInfo()
