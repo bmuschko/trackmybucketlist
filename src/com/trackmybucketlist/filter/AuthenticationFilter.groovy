@@ -28,7 +28,7 @@ class AuthenticationFilter implements Filter {
 
         UserInfo userInfo
 
-        if(user) {
+        if(userService.isUserLoggedIn()) {
             userInfo = new AuthenticatedUserInfo()
             userInfo.setUrl userService.createLogoutURL(LOGOUT_URL)
             userInfo.setUserId user.getUserId()
