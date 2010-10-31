@@ -4,10 +4,9 @@
     <defaultAnt bundledAnt="true" />
   </component>
   <component name="ArtifactManager">
-    <artifact type="exploded-war" build-on-make="true" name="trackmybucketlist:Web exploded">
-      <output-path>$PROJECT_DIR$/out/artifacts/trackmybucketlist_Web_exploded</output-path>
+    <artifact type="exploded-war" build-on-make="true" name="trackmybucketlist:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/trackmybucketlist_war_exploded</output-path>
       <root id="root">
-        <element id="javaee-facet-resources" facet="trackmybucketlist/web/Web" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="classes">
             <element id="module-output" name="trackmybucketlist" />
@@ -16,6 +15,7 @@
             <element id="library" level="project" name="lib" />
           </element>
         </element>
+        <element id="javaee-facet-resources" facet="trackmybucketlist/web/Web" />
       </root>
     </artifact>
   </component>
@@ -213,6 +213,7 @@
         <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.3.8.jar!/" />
         <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/gaelyk-0.5.6.jar!/" />
         <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/groovy-all-1.7.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/geronimo-servlet_2.5_spec-1.2.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

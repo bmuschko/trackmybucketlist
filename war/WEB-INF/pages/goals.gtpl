@@ -12,7 +12,7 @@
 
 <h2>Goals</h2>
 
-<a href="/goals/add">Add Goal</a>
+<a href="/user/goals/add">Add Goal</a>
 <br><br>
 <div class="goals">
    <ul id="sortable">
@@ -20,7 +20,7 @@
          <li class="ui-state-default" id="goal_${goal.key.id}">
             ${goal.name}<br>
             ${goal.description}<br>
-            <a href="/goals/delete/${goal.key.id}">Delete</a> | <a href="/goals/edit/${goal.key.id}">Edit</a>
+            <a href="/user/goals/delete/${goal.key.id}">Delete</a> | <a href="/user/goals/edit/${goal.key.id}">Edit</a>
          </li>
       <% } %>
    </ul>

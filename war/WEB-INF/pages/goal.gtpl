@@ -8,7 +8,7 @@
 
 <h2>${action} Goal</h2>
 
-<form action="/goals/${!existingKey ? 'insert' : 'update'}" method="POST">
+<form action="/user/goals/${!existingKey ? 'insert' : 'update'}" method="POST">
    <table border="0">
       <tbody>
          <tr>
@@ -26,7 +26,7 @@
    </table>
    <br>
    <input type="submit" value="${action}">
-   <input type="button" value="Cancel" onclick="javascript:document.location.href = '/goals';">
+   <input type="button" value="Cancel" onclick="javascript:document.location.href = '/user/goals';">
 </form>
 
 <% include '/WEB-INF/includes/footer.gtpl' %>

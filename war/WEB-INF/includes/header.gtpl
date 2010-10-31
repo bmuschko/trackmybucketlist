@@ -11,4 +11,11 @@
         <div>
             <h1>Track My Bucket List</h1>          
         </div>
+        <% def userInfo = request.getAttribute("userInfo")
+
+           if(userInfo.loggedIn) { %>
+               Hello, ${userInfo.email} | <a href="${userInfo.url}">Sign Out</a>
+           <% } else { %>
+               <a href="${userInfo.url}">Login</a>
+           <% } %>
         <div>

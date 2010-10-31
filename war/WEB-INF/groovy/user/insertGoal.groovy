@@ -8,4 +8,4 @@ goal.description = params.description
 goal.created = new Date()
 goal.save()
 
-redirect '/goals'
+redirect '/user/goals'
