@@ -5,7 +5,7 @@ import static com.google.appengine.api.datastore.FetchOptions.Builder.*
 log.info "Getting all goals"
 
 def query = new Query("Goal")
-query.addFilter("userId", Query.FilterOperator.EQUAL, request.userInfo.userId)
+query.addFilter("userId", Query.FilterOperator.EQUAL, users.currentUser.userId)
 PreparedQuery preparedQuery = datastore.prepare(query)
 query.addSort("created", Query.SortDirection.DESCENDING)
 def goals = preparedQuery.asList(withDefaults())

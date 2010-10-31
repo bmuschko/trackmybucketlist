@@ -11,11 +11,11 @@
         <div>
             <h1>Track My Bucket List</h1>          
         </div>
-        <% def userInfo = request.getAttribute("userInfo")
+        <% def userService = users
 
-           if(userInfo.loggedIn) { %>
-               Hello, ${userInfo.email} | <a href="${userInfo.url}">Sign Out</a>
+           if(userService.isUserLoggedIn()) { %>
+               Hello, ${userService.currentUser.email} | <a href="${userService.createLogoutURL("/")}">Sign Out</a>
            <% } else { %>
-               <a href="${userInfo.url}">Login</a>
+               <a href="${userService.createLoginURL("/user/goals")}">Login</a>
            <% } %>
         <div>

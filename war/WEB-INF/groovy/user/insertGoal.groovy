@@ -5,7 +5,7 @@ log.info "Inserting goal"
 def goal = new Entity("Goal")
 goal.name = params.name
 goal.description = params.description
-goal.userId = request.userInfo.userId
+goal.userId = users.currentUser.userId
 goal.created = new Date()
 goal.save()
 
