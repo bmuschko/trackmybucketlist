@@ -38,7 +38,7 @@
     -->
     <filter>
         <filter-name>AuthenticationFilter</filter-name>
-        <filter-class>com.trackmybucketlist.filter.AuthenticationFilter</filter-class>
+        <filter-class>com.trackmybucketlist.filter.ExcludingUrlAuthenticationFilter</filter-class>
     </filter>
 
     <filter>
@@ -89,6 +89,6 @@
     </security-constraint>
 
     <welcome-file-list> 
-        <welcome-file>index.gtpl</welcome-file> 
+        <welcome-file>index.gtpl</welcome-file>
     </welcome-file-list>
 </web-app>

@@ -1,7 +1,5 @@
 package com.trackmybucketlist.domain.user
 
-import com.trackmybucketlist.domain.UserInfo
-
 class AnonymousUserInfo implements UserInfo {
     final boolean loggedIn = false
     String url
