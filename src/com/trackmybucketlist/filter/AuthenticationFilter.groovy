@@ -10,13 +10,6 @@ import groovyx.gaelyk.logging.GroovyLogger
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.*
 
-/**
- * Created by IntelliJ IDEA.
- * User: ben
- * Date: Oct 30, 2010
- * Time: 10:48:43 AM
- * To change this template use File | Settings | File Templates.
- */
 class AuthenticationFilter implements Filter {
     private final String LOGOUT_URL = "/"
     private final String LOGIN_URL = "/user/goals"

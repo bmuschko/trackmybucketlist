@@ -4,13 +4,6 @@ import com.trackmybucketlist.util.WebAppUtils
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.*
 
-/**
- * Created by IntelliJ IDEA.
- * User: ben
- * Date: Oct 31, 2010
- * Time: 2:58:07 PM
- * To change this template use File | Settings | File Templates.
- */
 class ExcludingUrlAuthenticationFilter extends FilterChainProxy {
     private List<String> excludedUrls
 
